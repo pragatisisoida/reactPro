@@ -2,3 +2,4 @@ export const LOGIN_GET = "LOGIN_GET";
 export const FETCH_DATA_INIT ="FETCH_DATA_INIT";
 export const FETCH_DATA_SUCCESS = "FETCH_DATA_SUCCESS";
 export const FETCH_DATA_FAILURE = "FETCH_DATA_FAILURE";
+export const FETCH_DATA = "FETCH_DATA";

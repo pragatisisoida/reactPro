@@ -8,13 +8,17 @@ class LoginScreen extends React.Component {
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
-this.state =
-{name:"raj"
-    }
-}
+        this.state =
+            {
+            name:"raj"
+            }
+        }
     handleClick(){
         console.log("functin called")
-        this.props.actions.getLoginInfo(this.state.name);
+        this.props.actions.fetchData(this.state.name);
+        // this.props.actions.fetchDataAxios();
+        // this.props.actions.fetchDataUsingFetch();
+
     }
     
     render(){
