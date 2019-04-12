@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import * as actions from './actions';
 import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
-
+import './styles.scss'
 class LoginScreen extends React.Component {
     constructor(props){
         super(props);
@@ -24,10 +24,9 @@ class LoginScreen extends React.Component {
     render(){
         return ( 
             <div>
-            <div> this is my Login Screen </div>
-            <p>store name {this.props.loginState.loginData && this.props.loginState.loginData.name}</p>
-            <p>state name  {this.state.name}</p>
+            <div > this is my Home Screen </div>
             <button onClick = {this.handleClick} > trigger action</button>
+
 
             <Link to="/notFound">
                 <button>Go to not found</button>
@@ -35,6 +34,20 @@ class LoginScreen extends React.Component {
             <Link to ="/">
             <button> Go to Home</button>
             </Link>
+         {this.props.loginState.countries.loading?
+            <div>Loading..</div>
+        :
+        <ul className={"a_b"}>
+        {this.props.loginState.countries.data && this.props.loginState.countries.data.length && this.props.loginState.countries.data.map(row =>{
+
+            return (<li>{row.name}</li>)
+        }
+         
+            
+        )}
+        </ul>
+        }
+        
 
             </div>
     );

@@ -30,30 +30,7 @@ export function fetchData(payload) {
     }
 }
 
-// export function fetchDataAxios(payload) {
-//     return apiFunctions.sendAxiosRequest({
-//         initHandler: this.fetchDataInit,
-//         successHandler: this.fetchDataSuccess,
-//         failureHandler: this.fetchDataFailure,
-//         url: "https://restcountries.eu/rest/v2/all",
-//         headers: {
 
-//         },
-//         method: "GET",
-//     })
-// }
-// export function fetchDataUsingFetch(payload) {
-//     return apiFunctions.sendFetchRequest({
-//         initHandler: this.fetchDataInit,
-//         successHandler: this.fetchDataSuccess,
-//         failureHandler: this.fetchDataFailure,
-//         url: "https://restcountries.eu/rest/v2/all",
-//         headers: {
-
-//         },
-//         method: "GET",
-//     })
-// }
 export function fetchDataInit() {
     return {
         type: actionTypes.FETCH_DATA_INIT,
