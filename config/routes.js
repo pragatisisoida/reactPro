@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import LoginScreen from '../modules/login/loginScreen';
 import NotFound from '../modules/notFound/notFoundScreen';
-import  App from '../App';
+import  App from '../modules/App';
 export default () => {
  return (
    <BrowserRouter>
