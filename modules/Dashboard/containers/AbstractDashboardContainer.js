@@ -18,6 +18,6 @@ export default class AbstractDashboardContainer extends React.Component {
     }
     
     render() {
-        return <DashboardView onClick={this.onClick}/>;
+        return <DashboardView onClick={this.onClick} props = {this.props}/>;
     }
 }

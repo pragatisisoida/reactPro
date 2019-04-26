@@ -1,12 +1,14 @@
 import React from 'react';
-import Button from 'react-native-button';
+import { Button } from 'react-native';
 
-import styles from '../../../native/styles';
+// import styles from '../../../native/styles';
 
-export default props => 
+export default props =>
     <Button
         onPress={props.onClick}
-        style={styles.buttonText}
-        containerStyle={styles.button}>
+        title = {"About"}
+        // style={styles.buttonText}
+        // containerStyle={styles.button}
+        >
         About
     </Button>;

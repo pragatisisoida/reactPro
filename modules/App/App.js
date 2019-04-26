@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import LoginScreen from '../../../sampleApps/reactPro/modules/login/loginScreen';
 import './styles.scss'
 
- class App extends React.Component {
+export default class App extends React.Component {
     render(){
         return ( 
             <div className = {"container"}> this is my new react web app
@@ -14,4 +14,3 @@ import './styles.scss'
  }
 }
 
- export default App;
