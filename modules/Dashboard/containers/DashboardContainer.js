@@ -1,9 +1,13 @@
     
 import React from 'react';
-import AbstractDashboardContainer from './AbstractDashboardContainer';
+import DashboardView from '../views/DashboardView';
 
-export default class DashboardContainer extends AbstractDashboardContainer {
+export default class DashboardContainer extends React.Component {
     onClick() {
-        // alert('This is an example application to show how to reuse code between React and React Native');
+    //   this.props.navigation.navigate('Modal');
     }
+    render() {
+        return <DashboardView onClick={this.onClick} props = {this.props}/>;
+    }
+
 }

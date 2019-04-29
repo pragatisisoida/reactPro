@@ -20,8 +20,10 @@
   "homepage": "https://github.com/pragatisisoida/reactPro#readme",
   "dependencies": {
     "@material-ui/core": "^3.9.3",
+    "@shoutem/theme": "^0.11.3",
     "axios": "^0.18.0",
     "babel-loader": "^7.1.5",
+    "native-base": "^2.12.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
