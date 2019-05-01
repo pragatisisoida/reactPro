@@ -7,18 +7,6 @@ export default class App extends Component {
   constructor(props){
     super(props);
   }
-  // static navigationOptions =(navigation) =>{
-  //  return{ 
-  //    headerLeft: (
-  //     <Button transparent  onPress={() =>navigation.toggleDrawer()} title = "">
-  //     <Icon 
-  //       name="menu"
-  //       color="#fff"
-  //       type = "materialIcons"
-  //     />
-  //     </Button>
-  //   )}
-  // }
   render() {
     return (
       <Container>
